@@ -1,10 +1,9 @@
-import { Hero } from '@/components'
 import Image from 'next/image'
+import { Hero } from '@/components'
 
 export default function Home() {
   return (
-    <main className=" text-center">
-      hi
+    <main className="p-3 text-center">
       <Hero/>
     </main>
   )
