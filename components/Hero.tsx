@@ -15,16 +15,16 @@ const Hero = () => {
             <div>
                 <CustomButton
                     title="Explore Cars"
-                    containerStyles="bg-blue-600 text-white rounded-full mt-10 px-10 py-5 text-lg"
+                    containerStyles="bg-blue-600 text-white rounded-full mt-10 px-10 py-5 text-lg shadow-2xl"
                     handleClick={handleScroll}
                     />
             </div>
         </div>
         <div className='hero__image-container '>
             <div className='hero__image '>
-                <Image src={'/hero.png'} alt="hero" fill className='w-[70%] object-contain'/>
-                <div className='hero__image-overlay' />
+                <Image loading="lazy" src={'/hero.png'} alt="hero" fill className='w-[70%] object-contain'/>
             </div>
+            <div className='hero__image-overlay' />
         </div>
     </div>
   )
